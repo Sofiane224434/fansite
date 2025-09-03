@@ -3,3 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* toute la hauteur de l'écran */
+}
+
+main {
+  flex: 1; /* pousse le footer en bas */
+}
+
+footer {
+    display: flex;
+    position: relative;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background: #112500;
+    color: #fff;
+}
+
+hr {
+    border: none;
+    margin: 0;
+    height: 3px;
+    background: linear-gradient(to right, #2ecc71, #3498db);
+}
+
+
+/* Class */
+
+.footerarticle {
+    height: 150px;
+    margin-top: 1.5rem;
+}
+
+footer hr {
+    position: absolute;
+    width: 100%;
+    top: 0;   /* colle en haut du footer */
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+footer img {
+    margin-top: 1rem;
+}
