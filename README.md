@@ -100,7 +100,6 @@ Ajoutez des captures dans `assets/images/` puis référencez-les ici:
 - Tests d’affichage mobile/tablette (media queries)
 
 ## Crédits
-- Icônes: dossier `assets/icons`
 - Informations ambassade (footer): Ambassade de Malaisie à Paris
 
 ## Auteur
