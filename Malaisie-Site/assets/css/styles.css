@@ -137,8 +137,8 @@ ul hr{
 }
 
 .footerarticle {
-    height: 150px;
-    margin-top: 1.5rem;
+    height: 140px;
+    margin-top: 1.25rem;
 }
 
 footer hr {
@@ -151,10 +151,6 @@ footer h2 {
     margin-bottom: 1rem;
 }
 
-footer img {
-    margin-top: 1rem;
-}
-
 footer a {
     color: black;
 }
@@ -162,4 +158,5 @@ footer a {
 footer p {
     margin-top: 0.5rem;
 }
+
 
