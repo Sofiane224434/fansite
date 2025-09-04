@@ -10,11 +10,24 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* toute la hauteur de l'écran */
+    min-height: 100vh; 
 }
 
-main {
-  flex: 1; /* pousse le footer en bas */
+header {
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header::before {
+    content: "";
+    height: 150px;
+    position: absolute;
+    inset: 0; 
+    background: url("../images/route-avion-definie-trajectoires-avion-pointillees_349999-1987-removebg-preview\ \(1\).png") center/cover no-repeat;
+    opacity: 0.1; 
 }
 
 footer {
@@ -22,8 +35,20 @@ footer {
     position: relative;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background: #112500;
+    background: #00484b;
     color: #fff;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: cursive;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+    letter-spacing: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 hr {
@@ -33,8 +58,83 @@ hr {
     background: linear-gradient(to right, #2ecc71, #3498db);
 }
 
+a {
+    text-decoration: none;
+}
+
+
 
 /* Class */
+
+.logo{
+    margin-top: 1.5rem;
+}
+
+.menustyle{
+    position:sticky; 
+    background-color: white;
+    top: 0%;
+    z-index: 1000;
+    border:4px solid #2ecc71;
+    border-bottom: none;
+
+}
+
+.menu-btn{
+    display: flex;
+    height: 40px;
+    font-size:x-large;
+    font-family: Georgia, serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.menustyle ul{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;  
+    width: 100.65% !important;
+    left: -4px;                 
+    border: 4px solid #2ecc71;
+    border-bottom: none;
+    background: #fff;
+    border-top: none;
+    z-index: 1100; 
+    transition: opacity 0.8s ease-in-out, max-height 1.5s ease;
+}
+
+.menustyle ul li{
+    text-align: center;
+    font-size: larger;
+    font-family: Georgia, serif;
+    padding: 1rem;
+    border-top: 1px solid #e6e6e6;
+}
+
+ul hr{
+
+    position: absolute;
+    left: -2rem;
+    height: 4px;
+    width: 78.5rem;
+    margin-top: 0.75rem;
+}
+
+.menustyle:hover ul{
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+    width: 100%;
+}
+
+.menustyle a {
+    display: block;
+}
+
+.menustyle a:hover {
+    background-color: #d6d6d6; 
+}
 
 .footerarticle {
     height: 150px;
@@ -44,7 +144,7 @@ hr {
 footer hr {
     position: absolute;
     width: 100%;
-    top: 0;   /* colle en haut du footer */
+    top: 0; 
 }
 
 footer h2 {
@@ -54,3 +154,12 @@ footer h2 {
 footer img {
     margin-top: 1rem;
 }
+
+footer a {
+    color: black;
+}
+
+footer p {
+    margin-top: 0.5rem;
+}
+
