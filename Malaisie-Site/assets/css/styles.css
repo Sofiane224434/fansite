@@ -39,6 +39,25 @@ footer {
     color: #fff;
 }
 
+footer hr {
+    position: absolute;
+    width: 100%;
+    top: 0; 
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: black;
+}
+
+footer p {
+    margin-top: 0.5rem;
+}
+
+
 h1 {
     font-size: 5rem;
     font-family: cursive;
@@ -136,27 +155,30 @@ ul hr{
     background-color: #d6d6d6; 
 }
 
+.hero {
+    background-image: url(/Malaisie-Site/assets/images/Hero\ Malaysia.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+.hero p {
+    margin-top: 5rem;
+}
+
 .footerarticle {
     height: 140px;
     margin-top: 1.25rem;
 }
 
-footer hr {
-    position: absolute;
-    width: 100%;
-    top: 0; 
-}
 
-footer h2 {
-    margin-bottom: 1rem;
-}
-
-footer a {
-    color: black;
-}
-
-footer p {
-    margin-top: 0.5rem;
-}
 
 
