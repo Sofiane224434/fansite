@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/media-query.css">
     <link rel="shortcut icon" href="../malaisie.ico" type="image/x-icon" />
-    <title>Faq</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>F.A.Q</title>
 </head>
-<body>
-    <header>
-        <img height="120px" class="logo" src="../assets/images/malaisie_header-removebg-preview.png" alt="">
-        <h1>>F.A.Q</h1>
-        <img height="80px" src="../assets/images/prev.png" alt="">
+<body class="bg-gray-50">
+    <header class="flex items-center justify-between relative overflow-hidden bg-[aliceblue] h-[100px]">
+        <img class="h-32 mt-6" src="../assets/images/malaisie_header-removebg-preview.png" alt="">
+        <h1 class="text-[5rem] tracking-[1.5rem] mb-[0.8rem] font-[cursive] font-bold" style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;"> >F.A.Q</h1>
+        <img class="h-20" src="../assets/images/prev.png" alt="">
+        <div class="absolute inset-0 h-[100px] w-full opacity-10 pointer-events-none bg-center bg-cover bg-no-repeat" style="background-image:url('../assets/images/route-avion-definie-trajectoires-avion-pointillees_349999-1987-removebg-preview (1).png');"></div>
     </header>
-    <nav class="menustyle">
-            <div class="menu-btn">▼ Menu</div>
-            <ul>
-                <a href="../index.html"><li>Accueil</li></a>
-                <a href="regions.html"><li>Régions</li></a>
-                <a href="culture.html"><li>Culture</li></a>
-                <a href="food.html"><li>Food</li></a>
-                <a href="budget.html"><li>Budget</li></a>
-                <a href="visa.html"><li>Visa</li></a>
-                <a href="faq.html"><li>F.A.Q<br><hr></li></a>
-            </ul>
-            <hr class="headerhr">
-        </nav>
+    <nav class="menustyle w-full mx-auto sticky top-0 z-50">
+        <div id="menuWrap" class="relative w-full flex flex-col items-center bg-white border-l-4 border-r-4 border-t-4 border-green-400">
+            <button id="menuBtn" type="button"  class="flex items-center justify-center w-full text-xl font-semibold bg-white" style="font-family:Georgia,serif; height:40px;">▼ Menu
+            </button>
+
+        <hr id="movingBar" class="w-full h-[4px] border-0 bg-gradient-to-r from-green-400 to-blue-500 m-0 transition-all duration-300" />
+
+        <ul id="menuDropdown" class="absolute top-full !left-[-4px] !w-[100.65%] bg-white border-l-4 border-r-4 border-green-400 border-t-0 rounded-b-lg shadow-lg z-50 opacity-0 max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+            <li><a href="../index.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Accueil</a></li>
+            <li><a href="regions.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Régions</a></li>
+            <li><a href="culture.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Culture</a></li>
+            <li><a href="food.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Food</a></li>
+            <li><a href="budget.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Budget</a></li>
+            <li><a href="visa.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Visa</a></li>
+            <li><a href="faq.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">F.A.Q</a></li>
+        </ul>
+        </div>
+    </nav>
     <main>
         <section class="contact-form">
             <h2>Posez votre question</h2>
@@ -249,35 +254,34 @@
             </div>
         </section>
     </main>
-    <footer>
-        <hr>
-            <article class="footerarticle">
-                <h2>🌐 Réseaux Ambassade</h2>
-                <div class="reseau">
-                    <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img height="40px" src="../assets/icons/facebook_108044.png" alt=""></a>
-                    <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img height="40px" src="../assets/icons/instagram_108043.png" alt=""></a>
-                </div>
-            </article>
-            <article class="footerarticle">
-                <h2>🌍 Découvrir</h2>
-                <a class="listefooter" href="../index.html">Accueil</a> <br>
-                <a class="listefooter" href="regions.html">Régions</a> <br>
-                <a class="listefooter" href="culture.html">Culture</a> <br>
-                <a class="listefooter" href="food.html">Food</a>
-            </article>
-            
-            <article class="footerarticle">
-                <h2>💶 Pratiques</h2> 
-                <a class="listefooter" href="budget.html">Budget</a> <br>
-                <a class="listefooter" href="visa.html">Visa</a> <br>
-                <a class="listefooter" href="faq.html">F.A.Q</a>
-            </article>
-            <article class="footerarticle">
-                <h2>📞 Contact ambassade Malaisie</h2> 
-                <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
-                <p>Téléphone : 01 45 53 11 85</p>
-                <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
-            </article>
-    </footer>
+    <footer class="flex relative flex-row flex-wrap justify-around bg-[#00484b] text-white">
+        <hr class="absolute w-full top-0 border-0 h-[3px] bg-gradient-to-r from-green-400 to-blue-500 m-0" />
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-2 text-xl font-bold">🌐 Réseaux Ambassade</h2>
+            <div class="flex">
+                <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img class="h-10" src="../assets/icons/facebook_108044.png" alt=""></a>
+                <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img class="h-10" src="../assets/icons/instagram_108043.png" alt=""></a>
+            </div>
+        </article>
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-1 text-xl font-bold">🌍 Découvrir</h2>
+            <a class="block" href="../index.html">Accueil</a>
+            <a class="block" href="regions.html">Régions</a>
+            <a class="block" href="culture.html">Culture</a>
+            <a class="block" href="food.html">Food</a>
+        </article>
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-1 text-xl font-bold">💶 Pratiques</h2>
+            <a class="block" href="budget.html">Budget</a>
+            <a class="block" href="visa.html">Visa</a>
+            <a class="block" href="faq.html">F.A.Q</a>
+        </article>
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-2 text-xl font-bold">📞 Contact ambassade Malaisie</h2>
+            <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
+            <p>Téléphone : 01 45 53 11 85</p>
+            <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
+        </article>
+    <script src="../assets/menu.js"></script>
 </body>
 </html>

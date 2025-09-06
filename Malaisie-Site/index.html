@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/media-query.css">
     <link rel="shortcut icon" href="malaisie.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Accueil</title>
 </head>
-<body>
-    <header>
-        <img height="120px" class="logo" src="assets/images/malaisie_header-removebg-preview.png" alt="">
-        <h1>>Accueil</h1>
-        <img height="80px" src="assets/images/prev.png" alt="">
+<body class="bg-gray-50">
+    <header class="flex items-center justify-between relative overflow-hidden bg-[aliceblue] h-[100px]">
+        <img class="h-32 mt-6" src="assets/images/malaisie_header-removebg-preview.png" alt="">
+        <h1 class="text-[5rem] tracking-[1.5rem] mb-[0.8rem] font-[cursive] font-bold" style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;"> >Accueil</h1>
+        <img class="h-20" src="assets/images/prev.png" alt="">
+        <div class="absolute inset-0 h-[100px] w-full opacity-10 pointer-events-none bg-center bg-cover bg-no-repeat" style="background-image:url('assets/images/route-avion-definie-trajectoires-avion-pointillees_349999-1987-removebg-preview (1).png');"></div>
     </header>
-    <nav class="menustyle">
-            <div class="menu-btn">▼ Menu</div>
-            <ul>
-                <a href="index.html"><li>Accueil</li></a>
-                <a href="pages/regions.html"><li>Régions</li></a>
-                <a href="pages/culture.html"><li>Culture</li></a>
-                <a href="pages/food.html"><li>Food</li></a>
-                <a href="pages/budget.html"><li>Budget</li></a>
-                <a href="pages/visa.html"><li>Visa</li></a>
-                <a href="pages/faq.html"><li>F.A.Q<br><hr></li></a>
-            </ul>
-            <hr class="headerhr">
-        </nav>
+    <nav class="menustyle w-full mx-auto sticky top-0 z-50">
+        <div id="menuWrap" class="relative w-full flex flex-col items-center bg-white border-l-4 border-r-4 border-t-4 border-green-400">
+            <button id="menuBtn" type="button"  class="flex items-center justify-center w-full text-xl font-semibold bg-white" style="font-family:Georgia,serif; height:40px;">▼ Menu
+            </button>
+
+        <hr id="movingBar" class="w-full h-[4px] border-0 bg-gradient-to-r from-green-400 to-blue-500 m-0 transition-all duration-300" />
+
+        <ul id="menuDropdown" class="absolute top-full !left-[-4px] !w-[100.65%] bg-white border-l-4 border-r-4 border-green-400 border-t-0 rounded-b-lg shadow-lg z-50 opacity-0 max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+            <li><a href="index.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Accueil</a></li>
+            <li><a href="pages/regions.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Régions</a></li>
+            <li><a href="pages/culture.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Culture</a></li>
+            <li><a href="pages/food.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Food</a></li>
+            <li><a href="pages/budget.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Budget</a></li>
+            <li><a href="pages/visa.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Visa</a></li>
+            <li><a href="pages/faq.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">F.A.Q</a></li>
+        </ul>
+        </div>
+    </nav>
+
     <main>
-        <div class="hero">
+        <div>
             <p>Bienvenue sur le site consacré à ce beau pays !</p>
         </div>
-        <section class="content">
+        <section>
             <h2>Pourquoi ce site ?</h2>
             <article>
                 <h3>Présentation de l'auteur</h3>
@@ -46,34 +52,34 @@
                 <p>Que vous soyez un touriste, un étudiant, un professionnel ou une famille souhaitant s'installer en Malaisie, ce site s'adresse à tous ceux qui souhaitent en apprendre davantage sur ce pays et préparer au mieux leur séjour ou leur expatriation.</p>
             </article>
         </section>
-        <section class="content">
+        <section>
             <h2>Que trouverez-vous sur ce site ?</h2>
             <article>
-            <h3>Informations générales </h3>
-            <p>Vous découvrirez des données précises sur la géographie de la Malaisie (péninsule, Bornéo, principales villes), son histoire récente, la démographie (groupes ethniques, langues officielles comme le malais, religions pratiquées), ainsi que les coutumes locales importantes à connaître avant un séjour.</p>
+                <h3>Informations générales</h3>
+                <p>Vous découvrirez des données précises sur la géographie de la Malaisie (péninsule, Bornéo, principales villes), son histoire récente, la démographie (groupes ethniques, langues officielles comme le malais, religions pratiquées), ainsi que les coutumes locales importantes à connaître avant un séjour.</p>
             </article>
             <article>
-            <h3>Présentation approfondie des régions</h3>
-            <p>Chaque région (Kuala Lumpur, Penang, Sabah, Sarawak, etc.) est présentée avec ses spécificités : histoires, sites touristiques majeurs, activités recommandées, conseils de transport, périodes idéales pour visiter et particularités culturelles ou naturelles.</p>
+                <h3>Présentation approfondie des régions</h3>
+                <p>Chaque région (Kuala Lumpur, Penang, Sabah, Sarawak, etc.) est présentée avec ses spécificités : histoires, sites touristiques majeurs, activités recommandées, conseils de transport, périodes idéales pour visiter et particularités culturelles ou naturelles.</p>
             </article>
             <article>
-            <h3>Culture et traditions</h3>
-            <p>Vous trouverez des articles sur les principales fêtes existantes de manière factuelle, pour savoir les différentes cultures présentes (Hari Raya, Nouvel An chinois, Deepavali), les arts traditionnels (batik, danse, musique), l’architecture (mosquées, temples, bâtiments coloniaux),les valeurs sociales malaisiennes (respect, hospitalité, vie communautaire) et également sur les pratiques religieuses dont l'islam qui est prédominant.</p>
+                <h3>Culture et traditions</h3>
+                <p>Vous trouverez des articles sur les principales fêtes existantes de manière factuelle, pour savoir les différentes cultures présentes (Hari Raya, Nouvel An chinois, Deepavali), les arts traditionnels (batik, danse, musique), l’architecture (mosquées, temples, bâtiments coloniaux),les valeurs sociales malaisiennes (respect, hospitalité, vie communautaire) et également sur les pratiques religieuses dont l'islam qui est prédominant.</p>
             </article>
             <article>
-            <h3>Cuisine malaisienne</h3>
-            <p>Des fiches sur les plats emblématiques (nasi lemak, laksa, satay), les boissons typiques, les différences culinaires entre régions, des conseils pour manger dans les hawker centers ou restaurants locaux, et des adresses recommandées.</p>
+                <h3>Cuisine malaisienne</h3>
+                <p>Des fiches sur les plats emblématiques (nasi lemak, laksa, satay), les boissons typiques, les différences culinaires entre régions, des conseils pour manger dans les hawker centers ou restaurants locaux, et des adresses recommandées.</p>
             </article>
             <article>
-            <h3>Conseils pratiques</h3>
-            <p>Des guides pour établir un budget de voyage (hébergement, transport, nourriture), des explications sur les démarches de visa, les assurances santé, les moyens de transport (bus, train, avion), la sécurité, et des astuces pour les expatriés musulmans (mosquées, alimentation halal, écoles internationales).</p>
+                <h3>Conseils pratiques</h3>
+                <p>Des guides pour établir un budget de voyage (hébergement, transport, nourriture), des explications sur les démarches de visa, les assurances santé, les moyens de transport (bus, train, avion), la sécurité, et des astuces pour les expatriés musulmans (mosquées, alimentation halal, écoles internationales).</p>
             </article>
             <article>
-            <h3>FAQ et ressources utiles</h3>
-            <p>Une foire aux questions avec des réponses concrètes sur les formalités, la vie quotidienne, les contacts d’urgence, ainsi que des liens vers les sites officiels, forums d’expatriés et guides spécialisés pour approfondir vos recherches.</p>
+                <h3>FAQ et ressources utiles</h3>
+                <p>Une foire aux questions avec des réponses concrètes sur les formalités, la vie quotidienne, les contacts d’urgence, ainsi que des liens vers les sites officiels, forums d’expatriés et guides spécialisés pour approfondir vos recherches.</p>
             </article>
         </section>
-        <section class="content">
+        <section>
             <h2>Informations Générales</h2>
             <p>La Malaisie, située en Asie du Sud-Est, se compose de deux régions distinctes : la Malaisie péninsulaire et la Malaisie orientale (Bornéo). Cette nation dynamique est reconnue pour sa mosaïque culturelle, où cohabitent harmonieusement Malais, Chinois, Indiens et de nombreux groupes indigènes. Cette diversité se reflète dans la vie quotidienne, la gastronomie, les fêtes et les traditions. Kuala Lumpur, la capitale, est un symbole de modernité avec ses gratte-ciel emblématiques comme les tours Petronas, ses quartiers historiques, ses marchés animés et ses centres commerciaux de renommée internationale.</p>
             <ul>
@@ -90,38 +96,36 @@
             <p>La vie quotidienne en Malaisie est rythmée par de nombreux festivals, marchés de nuit, événements culturels et une cuisine de rue réputée pour sa richesse et son accessibilité. Les grandes villes offrent toutes les commodités modernes, tandis que les villages traditionnels permettent de découvrir un mode de vie authentique.</p>
             <p>La Malaisie s’engage de plus en plus dans le tourisme durable et la préservation de son patrimoine naturel et culturel. Que vous soyez voyageur, étudiant, professionnel ou futur expatrié, vous trouverez en Malaisie un pays accueillant, dynamique et ouvert sur le monde.</p>
         </section>
-            
-
     </main>
-    <footer>
-        <hr>
-            <article class="footerarticle">
-                <h2>🌐 Réseaux Ambassade</h2>
-                <div class="reseau">
-                    <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img height="40px" src="assets/icons/facebook_108044.png" alt=""></a>
-                    <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img height="40px" src="assets/icons/instagram_108043.png" alt=""></a>
-                </div>
-            </article>
-            <article class="footerarticle">
-                <h2>🌍 Découvrir</h2>
-                <a class="listefooter" href="index.html">Accueil</a> <br>
-                <a class="listefooter" href="pages/regions.html">Régions</a> <br>
-                <a class="listefooter" href="pages/culture.html">Culture</a> <br>
-                <a class="listefooter" href="pages/food.html">Food</a>
-            </article>
-            
-            <article class="footerarticle">
-                <h2>💶 Pratiques</h2> 
-                <a class="listefooter" href="pages/budget.html">Budget</a> <br>
-                <a class="listefooter" href="pages/visa.html">Visa</a> <br>
-                <a class="listefooter" href="pages/faq.html">F.A.Q</a>
-            </article>
-            <article class="footerarticle">
-                <h2>📞 Contact ambassade Malaisie</h2> 
-                <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
-                <p>Téléphone : 01 45 53 11 85</p>
-                <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
-            </article>
+    <footer class="flex relative flex-row flex-wrap justify-around bg-[#00484b] text-white">
+        <hr class="absolute w-full top-0 border-0 h-[3px] bg-gradient-to-r from-green-400 to-blue-500 m-0" />
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-2 text-xl font-bold">🌐 Réseaux Ambassade</h2>
+            <div class="flex">
+                <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img class="h-10" src="assets/icons/facebook_108044.png" alt=""></a>
+                <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img class="h-10" src="assets/icons/instagram_108043.png" alt=""></a>
+            </div>
+        </article>
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-1 text-xl font-bold">🌍 Découvrir</h2>
+            <a class="block" href="index.html">Accueil</a>
+            <a class="block" href="pages/regions.html">Régions</a>
+            <a class="block" href="pages/culture.html">Culture</a>
+            <a class="block" href="pages/food.html">Food</a>
+        </article>
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-1 text-xl font-bold">💶 Pratiques</h2>
+            <a class="block" href="pages/budget.html">Budget</a>
+            <a class="block" href="pages/visa.html">Visa</a>
+            <a class="block" href="pages/faq.html">F.A.Q</a>
+        </article>
+        <article class="h-[130px] mt-4 flex flex-col items-start">
+            <h2 class="mb-2 text-xl font-bold">📞 Contact ambassade Malaisie</h2>
+            <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
+            <p>Téléphone : 01 45 53 11 85</p>
+            <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
+        </article>
     </footer>
+    <script src="assets/menu.js"></script>
 </body>
 </html>
