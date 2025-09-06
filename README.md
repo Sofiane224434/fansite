@@ -14,7 +14,7 @@ Lien d’entrée du site (local): `Malaisie-Site/index.html`
   - Budget
   - Visa
   - F.A.Q
-- Ressources statiques organisées (CSS, images, icônes)
+- Ressources statiques organisées (images, icônes)
 - Footer avec liens utiles et coordonnées de l’ambassade
 
 ## Structure du projet
@@ -29,21 +29,17 @@ Malaisie-Site/
 │  ├─ visa.html
 │  └─ faq.html
 ├─ assets/
-│  ├─ css/
-│  │  ├─ styles.css
-│  │  └─ media-query.css
 │  ├─ images/
-│  └─ icons/
-├─ malaisie.ico
+│  ├─ icons/
+│  └─ menu.js
+└─ malaisie.ico
 ```
 
-Les feuilles de style principales sont:
-- `assets/css/styles.css`
-- `assets/css/media-query.css`
+Le style principal se fait avec TailwindCSS et le menu déroulant avec Javascript
 
 ## Démarrer en local
 
-Prérequis: un navigateur web (Chrome, Firefox, Edge, Safari). Aucune dépendance ni backend requis.
+Prérequis: un navigateur web (Chrome, Firefox, Edge, Safari). Aucune dépendance requis.
 
 Option 1 — Ouvrir directement le fichier:
 1. Cloner le dépôt
@@ -83,7 +79,7 @@ Note: Les chemins relatifs (`assets/...`) fonctionneront tant que les fichiers g
 ## Personnalisation
 
 - Titre et favicon: modifier `<title>` et `malaisie.ico` dans `Malaisie-Site/`
-- Styles: éditer `assets/css/styles.css` et `assets/css/media-query.css`
+- Styles: éditer dans l'html avec TailwindCSS, Javascript et `<style>`
 - Contenu: éditer les fichiers dans `pages/` pour enrichir chaque section (texte, images, liens, etc.)
 
 ## Captures d’écran (optionnel)
