@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Accueil</title>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 overflow-x-hidden">
     <header class="flex items-center justify-between relative overflow-hidden bg-[aliceblue] h-[100px]">
         <img class="h-32 mt-6" src="assets/images/malaisie_header-removebg-preview.png" alt="">
         <h1 class="text-[5rem] tracking-[1.5rem] mb-[0.8rem] font-[cursive] font-bold" style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;"> >Accueil</h1>
@@ -34,67 +34,220 @@
     </nav>
 
     <main>
-        <div>
-            <p>Bienvenue sur le site consacré à ce beau pays !</p>
-        </div>
-        <section>
-            <h2>Pourquoi ce site ?</h2>
-            <article>
-                <h3>Présentation de l'auteur</h3>
-                <p>Je m'appelle Sofiane, passionné par la Malaisie pour de nombreuses raisons, notamment sa diversité culturelle, ses paysages magnifiques et son accueil chaleureux. Mon intérêt pour ce pays s'est développé au fil de mes découvertes et de mes recherches personnelles.</p>
-            </article>
-            <article>
-                <h3>Objectif du site</h3>
-                <p>Ce site a été créé pour partager des informations fiables et utiles sur la Malaisie, afin d'aider les voyageurs, les expatriés ou simplement les curieux à mieux connaître ce pays fascinant. J'espère que mon expérience et mes conseils vous seront utiles et vous donneront envie de découvrir la Malaisie à votre tour.</p>
-            </article>
-            <article>
-                <h3>Public visé</h3>
-                <p>Que vous soyez un touriste, un étudiant, un professionnel ou une famille souhaitant s'installer en Malaisie, ce site s'adresse à tous ceux qui souhaitent en apprendre davantage sur ce pays et préparer au mieux leur séjour ou leur expatriation.</p>
-            </article>
+        <section class="relative bg-cover bg-center lg:grid lg:h-screen lg:place-content-center" style="background-image: url('assets/images/Hero_Malaysia.jpg');">
+            <div class="absolute inset-0 bg-black/50 pointer-events-none"></div>
+
+            <div class="relative mx-auto w-full max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+                <div class="max-w-prose text-left">
+                    <h1 class="text-4xl font-bold text-white sm:text-5xl">
+                        Bienvenue sur le site consacré à
+                        <strong class="text-indigo-300">la Malaisie</strong>
+                    </h1>
+
+                    <p class="mt-4 text-base text-gray-200 sm:text-lg/relaxed">
+                        Ce projet présente des guides pratiques, des informations culturelles et des conseils de voyage pour découvrir la Malaisie en toute confiance.
+                    </p>
+
+                    <div class="mt-6">
+                        <h2 class="text-2xl font-semibold text-white">Pourquoi ce site ?</h2>
+                        <p class="mt-2 text-gray-200">
+                            L'objectif est de centraliser des informations fiables pour les voyageurs, expatriés et curieux : régions, gastronomie, budget, visas et astuces locales.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Que trouverez-vous sur ce site ?</h2>
-            <article>
-                <h3>Informations générales</h3>
-                <p>Vous découvrirez des données précises sur la géographie de la Malaisie (péninsule, Bornéo, principales villes), son histoire récente, la démographie (groupes ethniques, langues officielles comme le malais, religions pratiquées), ainsi que les coutumes locales importantes à connaître avant un séjour.</p>
-            </article>
-            <article>
-                <h3>Présentation approfondie des régions</h3>
-                <p>Chaque région (Kuala Lumpur, Penang, Sabah, Sarawak, etc.) est présentée avec ses spécificités : histoires, sites touristiques majeurs, activités recommandées, conseils de transport, périodes idéales pour visiter et particularités culturelles ou naturelles.</p>
-            </article>
-            <article>
-                <h3>Culture et traditions</h3>
-                <p>Vous trouverez des articles sur les principales fêtes existantes de manière factuelle, pour savoir les différentes cultures présentes (Hari Raya, Nouvel An chinois, Deepavali), les arts traditionnels (batik, danse, musique), l’architecture (mosquées, temples, bâtiments coloniaux),les valeurs sociales malaisiennes (respect, hospitalité, vie communautaire) et également sur les pratiques religieuses dont l'islam qui est prédominant.</p>
-            </article>
-            <article>
-                <h3>Cuisine malaisienne</h3>
-                <p>Des fiches sur les plats emblématiques (nasi lemak, laksa, satay), les boissons typiques, les différences culinaires entre régions, des conseils pour manger dans les hawker centers ou restaurants locaux, et des adresses recommandées.</p>
-            </article>
-            <article>
-                <h3>Conseils pratiques</h3>
-                <p>Des guides pour établir un budget de voyage (hébergement, transport, nourriture), des explications sur les démarches de visa, les assurances santé, les moyens de transport (bus, train, avion), la sécurité, et des astuces pour les expatriés musulmans (mosquées, alimentation halal, écoles internationales).</p>
-            </article>
-            <article>
-                <h3>FAQ et ressources utiles</h3>
-                <p>Une foire aux questions avec des réponses concrètes sur les formalités, la vie quotidienne, les contacts d’urgence, ainsi que des liens vers les sites officiels, forums d’expatriés et guides spécialisés pour approfondir vos recherches.</p>
-            </article>
+        <section class="bg-white py-16 sm:py-20">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">À propos</h2>
+                    <p class="mt-2 text-gray-500">Qui je suis, pourquoi ce site et à qui il s'adresse</p>
+                </div>
+
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="group relative bg-gradient-to-br from-white to-sky-50 rounded-xl border border-gray-200 shadow-sm p-6 hover:shadow-xl transition transform hover:-translate-y-2">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 text-3xl">👋</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Présentation de l'auteur</h3>
+                                <p class="mt-3 text-gray-600 text-sm">
+                                    Je m'appelle Sofiane, passionné par la Malaisie pour sa diversité culturelle, ses paysages et son accueil chaleureux. Ce site reflète mes découvertes et recherches personnelles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-gradient-to-br from-white to-emerald-50 rounded-xl border border-gray-200 shadow-sm p-6 hover:shadow-xl transition transform hover:-translate-y-2">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 text-3xl">🎯</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Objectif du site</h3>
+                                <p class="mt-3 text-gray-600 text-sm">
+                                    Partager des informations fiables et pratiques sur la Malaisie pour aider voyageurs, expatriés et curieux à mieux préparer leur séjour.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-gradient-to-br from-white to-amber-50 rounded-xl border border-gray-200 shadow-sm p-6 hover:shadow-xl transition transform hover:-translate-y-2">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 text-3xl">👥</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Public visé</h3>
+                                <p class="mt-3 text-gray-600 text-sm">
+                                    Que vous soyez touriste, étudiant, professionnel ou famille souhaitant s'installer, ce site s'adresse à tous ceux qui veulent découvrir et préparer un séjour en Malaisie.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Informations Générales</h2>
-            <p>La Malaisie, située en Asie du Sud-Est, se compose de deux régions distinctes : la Malaisie péninsulaire et la Malaisie orientale (Bornéo). Cette nation dynamique est reconnue pour sa mosaïque culturelle, où cohabitent harmonieusement Malais, Chinois, Indiens et de nombreux groupes indigènes. Cette diversité se reflète dans la vie quotidienne, la gastronomie, les fêtes et les traditions. Kuala Lumpur, la capitale, est un symbole de modernité avec ses gratte-ciel emblématiques comme les tours Petronas, ses quartiers historiques, ses marchés animés et ses centres commerciaux de renommée internationale.</p>
-            <ul>
-                <li><strong>Géographie :</strong> La Malaisie péninsulaire partage ses frontières avec la Thaïlande au nord et Singapour au sud, tandis que la Malaisie orientale occupe la partie nord de l’île de Bornéo, voisine de l’Indonésie et du Brunei. Le pays est traversé par de vastes forêts tropicales, des plages paradisiaques, des montagnes (comme le mont Kinabalu) et de nombreuses îles réputées pour la plongée et l’écotourisme (Perhentian, Langkawi, Tioman).</li>
-                <li><strong>Climat :</strong> Le climat est équatorial, chaud et humide toute l’année, avec une saison des pluies qui varie selon les régions. Cela favorise une biodiversité exceptionnelle, notamment dans les parcs nationaux comme Taman Negara ou Bako.</li>
-                <li><strong>Population et langues :</strong> Environ 33 millions d’habitants. Le malais (Bahasa Malaysia) est la langue officielle, mais l’anglais est très répandu, surtout dans les affaires, l’éducation et le tourisme. Le mandarin, le tamoul et d’autres langues sont également parlés selon les communautés.</li>
-                <li><strong>Religions :</strong> L’islam est la religion d’État, pratiquée par la majorité malaise. Le bouddhisme, le christianisme, l’hindouisme et d’autres religions sont aussi présents, ce qui favorise une coexistence pacifique et une grande tolérance religieuse. Les fêtes religieuses de chaque communauté sont célébrées à l’échelle nationale.</li>
-                <li><strong>Histoire et société :</strong> Indépendante du Royaume-Uni depuis 1957, la Malaisie est une monarchie constitutionnelle fédérale. Elle a connu une croissance économique rapide, devenant un centre industriel et commercial majeur en Asie du Sud-Est. Le pays est membre de l’ASEAN et joue un rôle actif dans la coopération régionale.</li>
-                <li><strong>Us et coutumes :</strong> Le respect des aînés, de l’autorité et des différences culturelles est fondamental. Il est d’usage de se déchausser avant d’entrer dans une maison, de s’habiller modestement dans les lieux de culte, et d’utiliser la main droite pour manger ou offrir quelque chose. Les salutations sont souvent accompagnées d’un sourire ou d’un léger hochement de tête.</li>
-                <li><strong>Économie :</strong> La Malaisie possède une économie diversifiée : électronique, fabrication, pétrole et gaz, agriculture (huile de palme, caoutchouc), et tourisme. Le pays attire de nombreux investisseurs et expatriés, notamment grâce à son dynamisme, son coût de la vie abordable et son environnement multiculturel.</li>
-            </ul>
-            <p>Le pays attire chaque année des millions de touristes grâce à ses paysages naturels variés : plages de sable blanc, îles tropicales, montagnes, jungles et parcs nationaux. Les amateurs de nature peuvent explorer la faune unique (orangs-outans, éléphants, oiseaux exotiques), faire de la randonnée dans les Cameron Highlands, ou plonger dans les eaux cristallines de Sipadan.</p>
-            <p>Pour les musulmans, la Malaisie est une destination privilégiée : la nourriture halal est omniprésente, les mosquées sont nombreuses, et les infrastructures sont adaptées aux besoins des familles musulmanes. Les expatriés bénéficient d’un environnement sûr, d’un système de santé de qualité et d’écoles internationales reconnues.</p>
-            <p>La vie quotidienne en Malaisie est rythmée par de nombreux festivals, marchés de nuit, événements culturels et une cuisine de rue réputée pour sa richesse et son accessibilité. Les grandes villes offrent toutes les commodités modernes, tandis que les villages traditionnels permettent de découvrir un mode de vie authentique.</p>
-            <p>La Malaisie s’engage de plus en plus dans le tourisme durable et la préservation de son patrimoine naturel et culturel. Que vous soyez voyageur, étudiant, professionnel ou futur expatrié, vous trouverez en Malaisie un pays accueillant, dynamique et ouvert sur le monde.</p>
+        <section class="py-16 bg-white">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <article class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Que trouverez-vous sur ce site ?</h2>
+                </article>
+
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <article class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl">📚</div>
+                            <h3 class="text-lg font-semibold text-gray-800">Infos essentielles</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Géographie, histoire courte, démographie et coutumes utiles avant le départ.</p>
+                    </article>
+
+                    <article class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl">🗺️</div>
+                            <h3 class="text-lg font-semibold text-gray-800">Régions & itinéraires</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Fiches par région (Kuala Lumpur, Penang, Sabah, Sarawak) : sites, saisons et transports.</p>
+                    </article>
+
+                    <article class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl">🎭</div>
+                            <h3 class="text-lg font-semibold text-gray-800">Culture & traditions</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Fêtes, arts locaux, codes de conduite et conseils pour visiter les lieux de culte.</p>
+                    </article>
+
+                    <article class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl">🍽️</div>
+                            <h3 class="text-lg font-semibold text-gray-800">Cuisine & adresses</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Plats incontournables, hawker centres, spécialités régionales et recommandations pratiques.</p>
+                    </article>
+
+                    <article class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl">💡</div>
+                            <h3 class="text-lg font-semibold text-gray-800">Conseils pratiques</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Budget, visas, santé, transports et astuces pour expatriés ou voyageurs longue durée.</p>
+                    </article>
+
+                    <article class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-4">
+                            <div class="text-3xl">🔗</div>
+                            <h3 class="text-lg font-semibold text-gray-800">FAQ & ressources</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Questions fréquentes, contacts utiles et liens vers sources officielles et forums d'expatriés.</p>
+                    </article>
+                </div>
+
+                <div class="mt-12">
+                    <div class="rounded-xl border border-gray-200 bg-gradient-to-r from-sky-50 to-white p-6 shadow-sm">
+                        <div class="sm:flex sm:items-start sm:gap-6">
+                            <div class="flex-none text-4xl">📌</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Aperçu — Informations générales</h3>
+                                <p class="mt-3 text-gray-700 leading-relaxed">
+                                    La Malaisie se compose de deux régions distinctes (péninsule et Bornéo). Pays multiculturel, il combine villes modernes (Kuala Lumpur) et paysages naturels (forêts tropicales, îles). Sur ce site vous trouverez des contenus synthétiques et pratiques pour planifier vos visites, choisir les meilleures périodes et comprendre les usages locaux.
+                                </p>
+                                <p class="mt-3 text-gray-600 text-sm">
+                                    Pour approfondir : consultez les sections Régions, Culture et Conseils pratiques, ou utilisez la FAQ pour les questions rapides.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="flow-root">
+                <dl class="-my-3 divide-y divide-gray-200 text-sm *:even:bg-gray-50">
+                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                        <dt class="font-medium text-gray-900 self-center">Géographie</dt>
+                        <dd class="text-gray-700 sm:col-span-2">La Malaisie péninsulaire partage ses frontières avec la Thaïlande au nord et Singapour au sud, tandis que la Malaisie orientale occupe la partie nord de l’île de Bornéo, voisine de l’Indonésie et du Brunei. Le pays est traversé par de vastes forêts tropicales, des plages paradisiaques, des montagnes (comme le mont Kinabalu) et de nombreuses îles réputées pour la plongée et l’écotourisme (Perhentian, Langkawi, Tioman).</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                        <dt class="font-medium text-gray-900">Climat</dt>
+                        <dd class="text-gray-700 sm:col-span-2">Le climat est équatorial, chaud et humide toute l’année, avec une saison des pluies qui varie selon les régions. Cela favorise une biodiversité exceptionnelle, notamment dans les parcs nationaux comme Taman Negara ou Bako.</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                        <dt class="font-medium text-gray-900">Population et langues</dt>
+                        <dd class="text-gray-700 sm:col-span-2">Environ 33 millions d’habitants. Le malais (Bahasa Malaysia) est la langue officielle, mais l’anglais est très répandu, surtout dans les affaires, l’éducation et le tourisme. Le mandarin, le tamoul et d’autres langues sont également parlés selon les communautés.</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                        <dt class="font-medium text-gray-900">Religions</dt>
+                        <dd class="text-gray-700 sm:col-span-2">L’islam est la religion d’État, pratiquée par la majorité malaise. Le bouddhisme, le christianisme, l’hindouisme et d’autres religions sont aussi présents, ce qui favorise une coexistence pacifique et une grande tolérance religieuse. Les fêtes religieuses de chaque communauté sont célébrées à l’échelle nationale.</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                        <dt class="font-medium text-gray-900">Histoire et société</dt>
+                        <dd class="text-gray-700 sm:col-span-2">Indépendante du Royaume-Uni depuis 1957, la Malaisie est une monarchie constitutionnelle fédérale. Elle a connu une croissance économique rapide, devenant un centre industriel et commercial majeur en Asie du Sud-Est. Le pays est membre de l’ASEAN et joue un rôle actif dans la coopération régionale.</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                        <dt class="font-medium text-gray-900">Us et coutumes</dt>
+                        <dd class="text-gray-700 sm:col-span-2">Le respect des aînés, de l’autorité et des différences culturelles est fondamental. Il est d’usage de se déchausser avant d’entrer dans une maison, de s’habiller modestement dans les lieux de culte, et d’utiliser la main droite pour manger ou offrir quelque chose. Les salutations sont souvent accompagnées d’un sourire ou d’un léger hochement de tête.</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                        <dt class="font-medium text-gray-900">Économie</dt>
+                        <dd class="text-gray-700 sm:col-span-2">La Malaisie possède une économie diversifiée : électronique, fabrication, pétrole et gaz, agriculture (huile de palme, caoutchouc) et tourisme. Le pays attire de nombreux investisseurs et expatriés, notamment grâce à son dynamisme, son coût de la vie abordable et son environnement multiculturel.</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="max-w-3xl mt-24 mx-auto px-4 sm:px-6 lg:px-8 mb-32">
+                <h3 class="text-lg font-semibold text-gray-900 text-center">En bref</h3>
+
+                <div class="mt-4 space-y-6">
+                    <section class="pt-4">
+                        <h4 class="font-medium text-gray-800 text-center">Nature & activités</h4>
+                        <p class="mt-2 text-sm text-gray-700 leading-relaxed text-justify"></p>
+                            Le pays attire chaque année des millions de touristes grâce à ses paysages naturels variés : plages de sable blanc, îles tropicales, montagnes, jungles et parcs nationaux. Les amateurs de nature peuvent explorer la faune unique (orangs-outans, éléphants, oiseaux exotiques), faire de la randonnée dans les Cameron Highlands, ou plonger dans les eaux cristallines de Sipadan.
+                        </p>
+                    </section>
+
+                    <section class="pt-4">
+                        <h4 class="font-medium text-gray-800 text-center">Infrastructures & accueil musulman</h4>
+                        <p class="mt-2 text-sm text-gray-700 leading-relaxed text-justify"></p>
+                            Pour les musulmans, la Malaisie est une destination privilégiée : la nourriture halal est omniprésente, les mosquées sont nombreuses, et les infrastructures sont adaptées aux besoins des familles musulmanes. Les expatriés bénéficient d’un environnement sûr, d’un système de santé de qualité et d’écoles internationales reconnues.
+                        </p>
+                    </section>
+
+                    <section class="pt-4">
+                        <h4 class="font-medium text-gray-800 text-center">Vie quotidienne & culture</h4>
+                        <p class="mt-2 text-sm text-gray-700 leading-relaxed text-justify"></p>
+                            La vie quotidienne en Malaisie est rythmée par de nombreux festivals, marchés de nuit, événements culturels et une cuisine de rue réputée pour sa richesse et son accessibilité. Les grandes villes offrent toutes les commodités modernes, tandis que les villages traditionnels permettent de découvrir un mode de vie authentique.
+                        </p>
+                    </section>
+
+                    <section class="pt-4 pb-1">
+                        <h4 class="font-medium text-gray-800 text-center">Durabilité & invitation</h4>
+                        <p class="mt-2 text-sm text-gray-700 leading-relaxed text-justify"></p>
+                            La Malaisie s’engage de plus en plus dans le tourisme durable et la préservation de son patrimoine naturel et culturel. Que vous soyez voyageur, étudiant, professionnel ou futur expatrié, vous trouverez en Malaisie un pays accueillant, dynamique et ouvert sur le monde.
+                        </p>
+                    </section>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="flex relative flex-row flex-wrap justify-around bg-[#00484b] text-white">
@@ -108,16 +261,16 @@
         </article>
         <article class="h-[130px] mt-4 flex flex-col items-start">
             <h2 class="mb-1 text-xl font-bold">🌍 Découvrir</h2>
-            <a class="block" href="index.html">Accueil</a>
-            <a class="block" href="pages/regions.html">Régions</a>
-            <a class="block" href="pages/culture.html">Culture</a>
-            <a class="block" href="pages/food.html">Food</a>
+            <a class="block hover:text-blue-600" href="../index.html">Accueil</a>
+            <a class="block hover:text-blue-600" href="regions.html">Régions</a>
+            <a class="block hover:text-blue-600" href="culture.html">Culture</a>
+            <a class="block hover:text-blue-600" href="food.html">Food</a>
         </article>
         <article class="h-[130px] mt-4 flex flex-col items-start">
             <h2 class="mb-1 text-xl font-bold">💶 Pratiques</h2>
-            <a class="block" href="pages/budget.html">Budget</a>
-            <a class="block" href="pages/visa.html">Visa</a>
-            <a class="block" href="pages/faq.html">F.A.Q</a>
+            <a class="block hover:text-blue-600" href="budget.html">Budget</a>
+            <a class="block hover:text-blue-600" href="visa.html">Visa</a>
+            <a class="block hover:text-blue-600" href="faq.html">F.A.Q</a>
         </article>
         <article class="h-[130px] mt-4 flex flex-col items-start">
             <h2 class="mb-2 text-xl font-bold">📞 Contact ambassade Malaisie</h2>
