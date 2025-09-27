@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../malaisie.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="malaisie.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Budget</title>
 </head>
 <body class="bg-gray-50">
-    <header class="flex items-center justify-between relative overflow-hidden bg-[aliceblue] h-[100px]">
-        <img class="h-32 mt-6" src="../assets/images/malaisie_header-removebg-preview.png" alt="">
-        <h1 class="text-[5rem] tracking-[1.5rem] mb-[0.8rem] font-[cursive] font-bold" style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;"> >Budget</h1>
-        <img class="h-20" src="../assets/images/prev.png" alt="">
-        <div class="absolute inset-0 h-[100px] w-full opacity-10 pointer-events-none bg-center bg-cover bg-no-repeat" style="background-image:url('../assets/images/route-avion-definie-trajectoires-avion-pointillees_349999-1987-removebg-preview (1).png');"></div>
+        <header class="relative flex items-center justify-between overflow-hidden bg-[aliceblue] px-4 sm:px-8 h-[90px] sm:h-[110px] lg:h-[140px]">
+        <img class="relative z-10 mt-4 sm:mt-6 h-20 sm:h-24 lg:h-32 shrink-0 transform -translate-x-4 sm:translate-x-0" src="assets/images/malaisie_header-removebg-preview.png" alt="">
+        <h1 class="relative z-10 flex-1 text-center text-3xl sm:text-5xl lg:text-[5rem] tracking-[0.5rem] sm:tracking-[1rem] lg:tracking-[1.5rem] mb-0 sm:mb-[0.8rem] font-[cursive] font-bold leading-tight" style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"> >Budget</h1>
+        <img class="relative z-10 h-12 sm:h-14 lg:h-20 shrink-0" src="assets/images/prev.png" alt="">
+        <div class="absolute inset-0 h-full w-full opacity-10 pointer-events-none bg-center bg-cover bg-no-repeat" style="background-image:url('assets/images/route-avion-definie-trajectoires-avion-pointillees_349999-1987-removebg-preview (1).png');"></div>
     </header>
     <nav class="menustyle w-full mx-auto sticky top-0 z-50">
         <div id="menuWrap" class="relative w-full flex flex-col items-center bg-white border-l-4 border-r-4 border-t-4 border-green-400">
@@ -21,8 +21,8 @@
 
         <hr id="movingBar" class="w-full h-[4px] border-0 bg-gradient-to-r from-green-400 to-blue-500 m-0 transition-all duration-300" />
 
-        <ul id="menuDropdown" class="absolute top-full !left-[-4px] !w-[100.65%] bg-white border-l-4 border-r-4 border-green-400 border-t-0 rounded-b-lg shadow-lg z-50 opacity-0 max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
-            <li><a href="../index.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Accueil</a></li>
+        <ul id="menuDropdown" class="absolute top-full !left-[-4px] !w-[101.9%] lg:!w-[100.65%] bg-white border-l-4 border-r-4 border-green-400 border-t-0 rounded-b-lg shadow-lg z-50 opacity-0 max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+            <li><a href="index.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Accueil</a></li>
             <li><a href="regions.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Régions</a></li>
             <li><a href="culture.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Culture</a></li>
             <li><a href="food.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Food</a></li>
@@ -255,20 +255,20 @@
             <p class="mb-4">Pour un séjour de 2 semaines, prévoyez un budget global (hors vol international) d’environ 400 à 500 €. Avec le billet d’avion, comptez entre 900 et 1500 € selon votre style de voyage.</p>
             <p class="mb-6">Astuce : Réservez vos vols à l’avance, comparez les hébergements, et privilégiez la street food pour économiser sans sacrifier la découverte culinaire !</p>
 
-            <div class="fixed right-0 top-1/2 -translate-y-1/2 flex items-center gap-2 z-[60] pointer-events-none group" aria-hidden="false">
+            <div class="fixed right-0 top-1/2 -translate-y-1/2 items-center gap-2 z-[60] pointer-events-none group hidden md:flex" aria-hidden="false">
                 <input id="calcToggle" type="checkbox" class="peer sr-only" aria-hidden="true" />
                 <label for="calcToggle" class="pointer-events-auto flex items-center justify-center w-12 h-12 bg-white rounded-l-full shadow-md border-4 border-emerald-500 cursor-pointer" title="Afficher la calculatrice" aria-label="Afficher la calculatrice">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="2" width="18" height="20" rx="2" stroke="#064E3B" stroke-width="1.5" fill="#ffffff"/>
-                        <rect x="7" y="7" width="10" height="3" rx="0.6" fill="#10B981"/>
-                        <g fill="#064E3B"></g>
-                            <rect x="6.2" y="12" width="2" height="2" rx="0.3"/>
-                            <rect x="9.1" y="12" width="2" height="2" rx="0.3"/>
-                            <rect x="12.0" y="12" width="2" height="2" rx="0.3"/>
-                            <rect x="14.9" y="12" width="2" height="2" rx="0.3"/>
-                            <rect x="6.2" y="15.1" width="2" height="2" rx="0.3"/>
-                            <rect x="9.1" y="15.1" width="2" height="2" rx="0.3"/>
-                            <rect x="12.0" y="15.1" width="6" height="2" rx="0.3"/>
+                        <rect x="3" y="2" width="18" height="20" rx="2" stroke="#064E3B" stroke-width="1.5" fill="#ffffff" />
+                        <rect x="7" y="7" width="10" height="3" rx="0.6" fill="#10B981" />
+                        <g fill="#064E3B">
+                            <rect x="6.2" y="12" width="2" height="2" rx="0.3" />
+                            <rect x="9.1" y="12" width="2" height="2" rx="0.3" />
+                            <rect x="12" y="12" width="2" height="2" rx="0.3" />
+                            <rect x="14.9" y="12" width="2" height="2" rx="0.3" />
+                            <rect x="6.2" y="15.1" width="2" height="2" rx="0.3" />
+                            <rect x="9.1" y="15.1" width="2" height="2" rx="0.3" />
+                            <rect x="12" y="15.1" width="6" height="2" rx="0.3" />
                         </g>
                     </svg>
                 </label>
@@ -288,34 +288,37 @@
             </div>
         </section>
     </main>
-    <footer class="flex relative flex-row flex-wrap justify-around bg-[#00484b] text-white">
-        <hr class="absolute w-full top-0 border-0 h-[3px] bg-gradient-to-r from-green-400 to-blue-500 m-0" />
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-2 text-xl font-bold">🌐 Réseaux Ambassade</h2>
-            <div class="flex">
-                <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img class="h-10" src="../assets/icons/facebook_108044.png" alt=""></a>
-                <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img class="h-10" src="../assets/icons/instagram_108043.png" alt=""></a>
-            </div>
-        </article>
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-1 text-xl font-bold">🌍 Découvrir</h2>
-            <a class="block hover:text-blue-600" href="../index.html">Accueil</a>
-            <a class="block hover:text-blue-600" href="regions.html">Régions</a>
-            <a class="block hover:text-blue-600" href="culture.html">Culture</a>
-            <a class="block hover:text-blue-600" href="food.html">Food</a>
-        </article>
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-1 text-xl font-bold">💶 Pratiques</h2>
-            <a class="block hover:text-blue-600" href="budget.html">Budget</a>
-            <a class="block hover:text-blue-600" href="visa.html">Visa</a>
-            <a class="block hover:text-blue-600" href="faq.html">F.A.Q</a>
-        </article>
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-2 text-xl font-bold">📞 Contact ambassade Malaisie</h2>
-            <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
-            <p>Téléphone : 01 45 53 11 85</p>
-            <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
-        </article>
-    <script src="../assets/menu.js"></script>
+    <footer class="relative bg-[#00484b] text-white px-6 py-10">
+        <hr class="absolute inset-x-0 top-0 h-[3px] border-0 bg-gradient-to-r from-green-400 to-blue-500" />
+        <div class="grid gap-8 sm:grid-cols-2 lg:flex lg:flex-wrap lg:justify-between lg:gap-10">
+            <article class="flex flex-col items-center gap-3 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">🌐 Réseaux Ambassade</h2>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img class="h-8 md:h-10" src="assets/icons/facebook_108044.png" alt=""></a>
+                    <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img class="h-8 md:h-10" src="assets/icons/instagram_108043.png" alt=""></a>
+                </div>
+            </article>
+            <article class="flex flex-col items-center gap-2 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">🌍 Découvrir</h2>
+                <a class="hover:text-blue-400" href="../index.html">Accueil</a>
+                <a class="hover:text-blue-400" href="regions.html">Régions</a>
+                <a class="hover:text-blue-400" href="culture.html">Culture</a>
+                <a class="hover:text-blue-400" href="food.html">Food</a>
+            </article>
+            <article class="flex flex-col items-center gap-2 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">💶 Pratiques</h2>
+                <a class="hover:text-blue-400" href="budget.html">Budget</a>
+                <a class="hover:text-blue-400" href="visa.html">Visa</a>
+                <a class="hover:text-blue-400" href="faq.html">F.A.Q</a>
+            </article>
+            <article class="flex flex-col items-center gap-2 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">📞 Contact ambassade Malaisie</h2>
+                <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
+                <p>Téléphone : 01 45 53 11 85</p>
+                <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
+            </article>
+        </div>
+    </footer>
+    <script src="/assets/menu.js"></script>
 </body>
 </html>

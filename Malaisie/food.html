@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../malaisie.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="malaisie.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Food</title>
 </head>
 <body class="bg-gray-50">
-    <header class="flex items-center justify-between relative overflow-hidden bg-[aliceblue] h-[100px]">
-        <img class="h-32 mt-6" src="../assets/images/malaisie_header-removebg-preview.png" alt="">
-        <h1 class="text-[5rem] tracking-[1.5rem] mb-[0.8rem] font-[cursive] font-bold" style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;"> >Food</h1>
-        <img class="h-20" src="../assets/images/prev.png" alt="">
-        <div class="absolute inset-0 h-[100px] w-full opacity-10 pointer-events-none bg-center bg-cover bg-no-repeat" style="background-image:url('../assets/images/route-avion-definie-trajectoires-avion-pointillees_349999-1987-removebg-preview (1).png');"></div>
+        <header class="relative flex items-center justify-between overflow-hidden bg-[aliceblue] px-4 sm:px-8 h-[90px] sm:h-[110px] lg:h-[140px]">
+        <img class="relative z-10 mt-4 sm:mt-6 h-20 sm:h-24 lg:h-32 shrink-0 transform -translate-x-4 sm:translate-x-0" src="assets/images/malaisie_header-removebg-preview.png" alt="">
+        <h1 class="relative z-10 flex-1 text-center text-3xl sm:text-5xl lg:text-[5rem] tracking-[0.5rem] sm:tracking-[1rem] lg:tracking-[1.5rem] mb-0 sm:mb-[0.8rem] font-[cursive] font-bold leading-tight" style="text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"> >Food</h1>
+        <img class="relative z-10 h-12 sm:h-14 lg:h-20 shrink-0" src="assets/images/prev.png" alt="">
+        <div class="absolute inset-0 h-full w-full opacity-10 pointer-events-none bg-center bg-cover bg-no-repeat" style="background-image:url('assets/images/route-avion-definie-trajectoires-avion-pointillees_349999-1987-removebg-preview (1).png');"></div>
     </header>
     <nav class="menustyle w-full mx-auto sticky top-0 z-50">
         <div id="menuWrap" class="relative w-full flex flex-col items-center bg-white border-l-4 border-r-4 border-t-4 border-green-400">
@@ -21,8 +21,8 @@
 
         <hr id="movingBar" class="w-full h-[4px] border-0 bg-gradient-to-r from-green-400 to-blue-500 m-0 transition-all duration-300" />
 
-        <ul id="menuDropdown" class="absolute top-full !left-[-4px] !w-[100.65%] bg-white border-l-4 border-r-4 border-green-400 border-t-0 rounded-b-lg shadow-lg z-50 opacity-0 max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
-            <li><a href="../index.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Accueil</a></li>
+        <ul id="menuDropdown" class="absolute top-full !left-[-4px] !w-[101.9%] lg:!w-[100.65%] bg-white border-l-4 border-r-4 border-green-400 border-t-0 rounded-b-lg shadow-lg z-50 opacity-0 max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+            <li><a href="index.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Accueil</a></li>
             <li><a href="regions.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Régions</a></li>
             <li><a href="culture.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Culture</a></li>
             <li><a href="food.html" class="block text-lg px-4 py-2 hover:bg-green-100 text-center font-serif border-t border-gray-200">Food</a></li>
@@ -48,7 +48,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Nasi Lemak.webp" alt="Photo Nasi Lemak" class="w-full h-full object-cover">
+                        <img src="/assets/images/Nasi Lemak.webp" alt="Photo Nasi Lemak" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Nasi Lemak</h4>
                     <p class="text-gray-600 mb-3">Riz cuit dans du lait de coco, servi avec anchois frits, cacahuètes, œuf, concombre et sambal épicé.</p>
@@ -57,7 +57,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Laksa.avif" alt="Photo Laksa" class="w-full h-full object-cover">
+                        <img src="/assets/images/Laksa.avif" alt="Photo Laksa" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Laksa</h4>
                     <p class="text-gray-600 mb-3">Soupe de nouilles épicée, à base de lait de coco ou de tamarin selon la région.</p>
@@ -66,7 +66,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Satay.jpg" alt="Photo Satay" class="w-full h-full object-cover">
+                        <img src="/assets/images/Satay.jpg" alt="Photo Satay" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Satay</h4>
                     <p class="text-gray-600 mb-3">Brochettes de viande grillée servies avec une sauce cacahuète.</p>
@@ -75,7 +75,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Roti Canai.jpg" alt="Photo Roti Canai" class="w-full h-full object-cover">
+                        <img src="/assets/images/Roti Canai.jpg" alt="Photo Roti Canai" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Roti Canai</h4>
                     <p class="text-gray-600 mb-3">Galette feuilletée servie avec des currys variés.</p>
@@ -84,7 +84,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Char Kway Teow.webp" alt="Photo Char Kway Teow" class="w-full h-full object-cover">
+                        <img src="/assets/images/Char Kway Teow.webp" alt="Photo Char Kway Teow" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Char Kway Teow</h4>
                     <p class="text-gray-600 mb-3">Nouilles de riz sautées au wok avec crevettes, œufs, germes de soja et saucisse chinoise.</p>
@@ -93,7 +93,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Nasi Kandar.jpg" alt="Photo Nasi Kandar" class="w-full h-full object-cover">
+                        <img src="/assets/images/Nasi Kandar.jpg" alt="Photo Nasi Kandar" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Nasi Kandar</h4>
                     <p class="text-gray-600 mb-3">Riz accompagné de différents currys et garnitures, spécialité de Penang.</p>
@@ -102,7 +102,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Hainanese Chicken Rice.jpg" alt="Photo Hainanese Chicken Rice" class="w-full h-full object-cover">
+                        <img src="/assets/images/Hainanese Chicken Rice.jpg" alt="Photo Hainanese Chicken Rice" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Hainanese Chicken Rice</h4>
                     <p class="text-gray-600 mb-3">Riz parfumé servi avec du poulet poché, sauce soja et piment.</p>
@@ -111,7 +111,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Asam Pedas.webp" alt="Photo Asam Pedas" class="w-full h-full object-cover">
+                        <img src="/assets/images/Asam Pedas.webp" alt="Photo Asam Pedas" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Asam Pedas</h4>
                     <p class="text-gray-600 mb-3">Poisson mijoté dans une sauce aigre et épicée à base de tamarin et de piments.</p>
@@ -120,7 +120,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Kuih.jpg" alt="Photo Kuih" class="w-full h-full object-cover">
+                        <img src="/assets/images/Kuih.jpg" alt="Photo Kuih" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-xl font-bold mb-2">Kuih</h4>
                     <p class="text-gray-600 mb-3">Assortiment de petits gâteaux colorés à base de riz gluant, noix de coco et pandan.</p>
@@ -134,7 +134,7 @@
             <ul class="space-y-4">
                 <li class="flex items-center space-x-4">
                     <div class="w-20 h-12 bg-gray-200 rounded overflow-hidden flex-shrink-0">
-                        <img src="../assets/images/Teh Tarik.webp" alt="Teh Tarik" class="w-full h-full object-cover">
+                        <img src="/assets/images/Teh Tarik.webp" alt="Teh Tarik" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <p class="font-semibold">Teh Tarik :</p>
@@ -144,7 +144,7 @@
 
                 <li class="flex items-center space-x-4">
                     <div class="w-20 h-12 bg-gray-200 rounded overflow-hidden flex-shrink-0">
-                        <img src="../assets/images/Kopi.jpg" alt="Kopi" class="w-full h-full object-cover">
+                        <img src="/assets/images/Kopi.jpg" alt="Kopi" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <p class="font-semibold">Kopi :</p>
@@ -154,7 +154,7 @@
 
                 <li class="flex items-center space-x-4">
                     <div class="w-20 h-12 bg-gray-200 rounded overflow-hidden flex-shrink-0">
-                        <img src="../assets/images/Air Bandung.jpg" alt="Air Bandung" class="w-full h-full object-cover">
+                        <img src="/assets/images/Air Bandung.jpg" alt="Air Bandung" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <p class="font-semibold">Air Bandung :</p>
@@ -164,7 +164,7 @@
 
                 <li class="flex items-center space-x-4">
                     <div class="w-20 h-12 bg-gray-200 rounded overflow-hidden flex-shrink-0">
-                        <img src="../assets/images/Cendol.jpg" alt="Cendol" class="w-full h-full object-cover">
+                        <img src="/assets/images/Cendol.jpg" alt="Cendol" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <p class="font-semibold">Cendol :</p>
@@ -196,7 +196,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Nasi Lemak Antarabangsa.jpg" alt="Nasi Lemak Antarabangsa" class="w-full h-full object-cover">
+                        <img src="/assets/images/Nasi Lemak Antarabangsa.jpg" alt="Nasi Lemak Antarabangsa" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-lg font-bold mb-1">Nasi Lemak Antarabangsa</h4>
                     <p class="text-gray-600"><strong>Adresse :</strong> Jalan Raja Muda Musa, Kuala Lumpur</p>
@@ -207,7 +207,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Penang Road Famous Laksa.jpg" alt="Penang Road Famous Laksa" class="w-full h-full object-cover">
+                        <img src="/assets/images/Penang Road Famous Laksa.jpg" alt="Penang Road Famous Laksa" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-lg font-bold mb-1">Penang Road Famous Laksa</h4>
                     <p class="text-gray-600"><strong>Adresse :</strong> Jalan Penang, George Town, Penang</p>
@@ -218,7 +218,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Restoran Line Clear Nasi Kanda.jpg" alt="Restoran Line Clear" class="w-full h-full object-cover">
+                        <img src="/assets/images/Restoran Line Clear Nasi Kanda.jpg" alt="Restoran Line Clear" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-lg font-bold mb-1">Restoran Line Clear Nasi Kandar</h4>
                     <p class="text-gray-600"><strong>Adresse :</strong> Jalan Penang, George Town, Penang</p>
@@ -229,7 +229,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Village Park Restaurant.jpg" alt="Village Park Restaurant" class="w-full h-full object-cover">
+                        <img src="/assets/images/Village Park Restaurant.jpg" alt="Village Park Restaurant" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-lg font-bold mb-1">Village Park Restaurant</h4>
                     <p class="text-gray-600"><strong>Adresse :</strong> Damansara Utama, Petaling Jaya</p>
@@ -240,7 +240,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Sin Yoon Loong.jpg" alt="Sin Yoon Loong" class="w-full h-full object-cover">
+                        <img src="/assets/images/Sin Yoon Loong.jpg" alt="Sin Yoon Loong" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-lg font-bold mb-1">Sin Yoon Loong</h4>
                     <p class="text-gray-600"><strong>Adresse :</strong> Jalan Bandar Timah, Ipoh</p>
@@ -251,7 +251,7 @@
 
                 <article class="bg-white rounded-xl shadow p-5">
                     <div class="h-40 sm:h-48 w-full bg-gray-200 rounded-md overflow-hidden mb-4 flex items-center justify-center text-gray-400">
-                        <img src="../assets/images/Top Spot Food Court.jpg" alt="Top Spot Food Court" class="w-full h-full object-cover">
+                        <img src="/assets/images/Top Spot Food Court.jpg" alt="Top Spot Food Court" class="w-full h-full object-cover">
                     </div>
                     <h4 class="text-lg font-bold mb-1">Top Spot Food Court</h4>
                     <p class="text-gray-600"><strong>Adresse :</strong> Jalan Padungan, Kuching, Sarawak</p>
@@ -262,34 +262,37 @@
             </div>
         </section>
     </main>
-    <footer class="flex relative flex-row flex-wrap justify-around bg-[#00484b] text-white">
-        <hr class="absolute w-full top-0 border-0 h-[3px] bg-gradient-to-r from-green-400 to-blue-500 m-0" />
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-2 text-xl font-bold">🌐 Réseaux Ambassade</h2>
-            <div class="flex">
-                <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img class="h-10" src="../assets/icons/facebook_108044.png" alt=""></a>
-                <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img class="h-10" src="../assets/icons/instagram_108043.png" alt=""></a>
-            </div>
-        </article>
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-1 text-xl font-bold">🌍 Découvrir</h2>
-            <a class="block hover:text-blue-600" href="../index.html">Accueil</a>
-            <a class="block hover:text-blue-600" href="regions.html">Régions</a>
-            <a class="block hover:text-blue-600" href="culture.html">Culture</a>
-            <a class="block hover:text-blue-600" href="food.html">Food</a>
-        </article>
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-1 text-xl font-bold">💶 Pratiques</h2>
-            <a class="block hover:text-blue-600" href="budget.html">Budget</a>
-            <a class="block hover:text-blue-600" href="visa.html">Visa</a>
-            <a class="block hover:text-blue-600" href="faq.html">F.A.Q</a>
-        </article>
-        <article class="h-[130px] mt-4 flex flex-col items-start">
-            <h2 class="mb-2 text-xl font-bold">📞 Contact ambassade Malaisie</h2>
-            <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
-            <p>Téléphone : 01 45 53 11 85</p>
-            <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
-        </article>
-    <script src="../assets/menu.js"></script>
+    <footer class="relative bg-[#00484b] text-white px-6 py-10">
+        <hr class="absolute inset-x-0 top-0 h-[3px] border-0 bg-gradient-to-r from-green-400 to-blue-500" />
+        <div class="grid gap-8 sm:grid-cols-2 lg:flex lg:flex-wrap lg:justify-between lg:gap-10">
+            <article class="flex flex-col items-center gap-3 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">🌐 Réseaux Ambassade</h2>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/MalaysianEmbassyParis/?locale=fr_FR"><img class="h-8 md:h-10" src="assets/icons/facebook_108044.png" alt=""></a>
+                    <a href="https://www.instagram.com/embassyofmalaysiaparis/#"><img class="h-8 md:h-10" src="assets/icons/instagram_108043.png" alt=""></a>
+                </div>
+            </article>
+            <article class="flex flex-col items-center gap-2 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">🌍 Découvrir</h2>
+                <a class="hover:text-blue-400" href="../index.html">Accueil</a>
+                <a class="hover:text-blue-400" href="regions.html">Régions</a>
+                <a class="hover:text-blue-400" href="culture.html">Culture</a>
+                <a class="hover:text-blue-400" href="food.html">Food</a>
+            </article>
+            <article class="flex flex-col items-center gap-2 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">💶 Pratiques</h2>
+                <a class="hover:text-blue-400" href="budget.html">Budget</a>
+                <a class="hover:text-blue-400" href="visa.html">Visa</a>
+                <a class="hover:text-blue-400" href="faq.html">F.A.Q</a>
+            </article>
+            <article class="flex flex-col items-center gap-2 text-sm md:text-base md:items-start md:text-left">
+                <h2 class="text-lg md:text-xl font-bold">📞 Contact ambassade Malaisie</h2>
+                <p>Adresse : 2 bis Rue Bénouville, 75016 Paris</p>
+                <p>Téléphone : 01 45 53 11 85</p>
+                <p>Ambassadeur : Eldeen Husaini Mohd Hasim</p>
+            </article>
+        </div>
+    </footer>
+    <script src="/assets/menu.js"></script>
 </body>
 </html>
