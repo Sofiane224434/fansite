@@ -76,6 +76,24 @@ Comme le site est statique, vous avez plusieurs options:
 
 Note: Les chemins relatifs (`assets/...`) fonctionneront tant que les fichiers gardent la même hiérarchie par rapport à `index.html`.
 
+## Déploiement sur VPS (fansite.azim404.com)
+
+Le site est livré en production via Docker (`nginx:alpine`) + reverse proxy Nginx hôte + Certbot, déployé automatiquement à chaque `git push` sur `main` par GitHub Actions.
+
+- Workflow CI/CD: `.github/workflows/deploy-vps.yml`
+- Stack runtime: `docker-compose.yml` (port local VPS `127.0.0.1:3008`)
+- Conf nginx conteneur: `deploy/nginx/site.conf`
+- Vhost reverse proxy hôte: `deploy/nginx/fansite.azim404.com.conf`
+- Procédure complète (DNS, secrets GitHub, certbot, rollback): [deploy/README.md](deploy/README.md)
+
+Test local rapide avec la même image:
+
+```bash
+docker compose up -d --build
+# puis http://localhost:3008
+```
+
+
 ## Personnalisation
 
 - Titre et favicon: modifier `<title>` et `malaisie.ico` dans `Malaisie-Site/`

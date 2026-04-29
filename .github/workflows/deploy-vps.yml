@@ -1,0 +1,72 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-vps-fansite
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: SSH deploy + docker compose
+    runs-on: ubuntu-latest
+
+    env:
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_PORT: ${{ secrets.VPS_PORT }}
+      VPS_USER: ${{ secrets.VPS_USER }}
+      APP_DIR: ${{ vars.VPS_APP_DIR }}
+      COMPOSE_PROJECT: ${{ vars.VPS_COMPOSE_PROJECT }}
+      REPO_URL: https://github.com/${{ github.repository }}.git
+      BRANCH: ${{ github.ref_name }}
+
+    steps:
+      - name: Checkout (sanity)
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p "${VPS_PORT:-22}" -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Deploy on VPS
+        run: |
+          set -euo pipefail
+          : "${APP_DIR:=/home/debian/apps/fansite}"
+          : "${COMPOSE_PROJECT:=fansite}"
+
+          ssh -p "${VPS_PORT:-22}" "$VPS_USER@$VPS_HOST" \
+            "APP_DIR='$APP_DIR' REPO_URL='$REPO_URL' BRANCH='$BRANCH' COMPOSE_PROJECT='$COMPOSE_PROJECT' bash -s" <<'REMOTE'
+          set -euo pipefail
+
+          if [ ! -d "$APP_DIR/.git" ]; then
+            mkdir -p "$APP_DIR"
+            git clone "$REPO_URL" "$APP_DIR"
+          fi
+
+          cd "$APP_DIR"
+          git remote set-url origin "$REPO_URL"
+          git fetch --all --prune
+          git reset --hard "origin/$BRANCH"
+          git clean -fd
+
+          docker compose -p "$COMPOSE_PROJECT" pull || true
+          docker compose -p "$COMPOSE_PROJECT" up -d --build --remove-orphans
+          docker image prune -f >/dev/null 2>&1 || true
+
+          echo "---- ps ----"
+          docker compose -p "$COMPOSE_PROJECT" ps
+          REMOTE
+
+      - name: Smoke test (local on runner)
+        run: |
+          # Ping public via le reverse proxy si DNS + Nginx + Certbot deja faits.
+          set +e
+          curl -skI --max-time 10 https://fansite.azim404.com | head -n 1 || true
